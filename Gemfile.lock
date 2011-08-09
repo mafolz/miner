@@ -1,3 +1,20 @@
+GIT
+  remote: git@github.com:mafolz/j_query_engine.git
+  revision: c0845040b9e176c673712f4840b0043b6ae66f59
+  specs:
+    j_query_engine (0.0.0)
+      rails
+
+GIT
+  remote: https://github.com/nicksieger/activerecord-jdbc-adapter.git
+  revision: c44c2922e5ce6f92101e308704d7f6bfc1e24980
+  specs:
+    activerecord-jdbc-adapter (1.2.0)
+    activerecord-jdbcsqlite3-adapter (1.2.0)
+      activerecord-jdbc-adapter (~> 1.2.0)
+      jdbc-sqlite3 (~> 3.7.2)
+    jdbc-sqlite3 (3.7.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -25,16 +42,14 @@ GEM
       activesupport (= 3.1.0.rc5)
       arel (~> 2.1.4)
       tzinfo (~> 0.3.29)
-    activerecord-jdbc-adapter (1.1.3)
-    activerecord-jdbcsqlite3-adapter (1.1.3)
-      activerecord-jdbc-adapter (= 1.1.3)
-      jdbc-sqlite3 (~> 3.7.0)
     activeresource (3.1.0.rc5)
       activemodel (= 3.1.0.rc5)
       activesupport (= 3.1.0.rc5)
     activesupport (3.1.0.rc5)
       multi_json (~> 1.0)
-    arel (2.1.5)
+    ansi (1.3.0)
+    arel (2.1.4)
+    bcrypt-ruby (2.1.4)
     bcrypt-ruby (2.1.4-java)
     bouncy-castle-java (1.5.0146.1)
     builder (3.0.0)
@@ -52,12 +67,12 @@ GEM
       multi_json (~> 1.0)
     hike (1.2.0)
     i18n (0.6.0)
-    jdbc-sqlite3 (3.7.2)
     jquery-rails (1.0.12)
       railties (~> 3.0)
       thor (~> 0.14)
     jruby-openssl (0.7.4)
       bouncy-castle-java
+    json (1.5.3)
     json (1.5.3-java)
     mail (2.3.0)
       i18n (>= 0.4.0)
@@ -98,6 +113,7 @@ GEM
       railties (~> 3.1.0.rc1)
       sass (>= 3.1.4)
       sprockets (>= 2.0.0.beta.9)
+    shoulda-matchers (1.0.0.beta3)
     sprockets (2.0.0.beta.13)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -107,6 +123,8 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
+    turn (0.8.2)
+      ansi (>= 1.2.2)
     tzinfo (0.3.29)
     uglifier (1.0.0)
       execjs (>= 0.3.0)
@@ -114,13 +132,19 @@ GEM
 
 PLATFORMS
   java
+  ruby
 
 DEPENDENCIES
+  activerecord-jdbc-adapter!
   activerecord-jdbcsqlite3-adapter
+  arel (= 2.1.4)
   coffee-rails (~> 3.1.0.rc)
+  j_query_engine!
   jquery-rails
   jruby-openssl
   json
   rails (= 3.1.0.rc5)
   sass-rails (~> 3.1.0.rc)
+  shoulda-matchers
+  turn
   uglifier

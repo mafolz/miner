@@ -1,1 +1,1 @@
-jruby-1.6.3@miner --create
+rvm jruby-1.6.3@miner --create

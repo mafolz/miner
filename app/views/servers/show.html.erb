@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @server.title %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @server.path %>
+</p>
+
+<p>
+  <b>Map path:</b>
+  <%= @server.map_path %>
+</p>
+
+
+<%= link_to 'Edit', edit_server_path(@server) %> |
+<%= link_to 'Back', servers_path %>
