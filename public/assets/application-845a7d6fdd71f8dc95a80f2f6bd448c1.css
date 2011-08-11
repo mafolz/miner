@@ -5,8 +5,8 @@
 */
 /* line 1, /home/mafolz/Projects/miner/app/assets/stylesheets/scaffolds.css.scss */
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #333;
+  color: #fff;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -28,11 +28,11 @@ pre {
 
 /* line 18, /home/mafolz/Projects/miner/app/assets/stylesheets/scaffolds.css.scss */
 a {
-  color: #000;
+  color: #fff;
 }
 /* line 20, /home/mafolz/Projects/miner/app/assets/stylesheets/scaffolds.css.scss */
 a:visited {
-  color: #666;
+  color: #999;
 }
 /* line 22, /home/mafolz/Projects/miner/app/assets/stylesheets/scaffolds.css.scss */
 a:hover {

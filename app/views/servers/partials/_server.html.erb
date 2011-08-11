@@ -1,0 +1,12 @@
+
+World rendering in process? <%= server.render_world_running? %>
+<br />
+<%= link_button(
+  "render world", 
+  render_world_server_path(server),
+  :method => :post 
+%>
+
+<pre>
+<%= server.render_world_process.read_line %>
+</pre>

@@ -1,12 +1,12 @@
 GIT
-  remote: git@github.com:mafolz/j_query_engine.git
-  revision: c0845040b9e176c673712f4840b0043b6ae66f59
+  remote: http://github.com/mafolz/j_query_engine.git
+  revision: 0e75a4cc46fa9837051b4197a1c25039350941f6
   specs:
-    j_query_engine (0.0.0)
+    j_query_engine (0.0.2)
       rails
 
 GIT
-  remote: https://github.com/nicksieger/activerecord-jdbc-adapter.git
+  remote: http://github.com/nicksieger/activerecord-jdbc-adapter.git
   revision: c44c2922e5ce6f92101e308704d7f6bfc1e24980
   specs:
     activerecord-jdbc-adapter (1.2.0)
@@ -162,7 +162,7 @@ DEPENDENCIES
   capistrano-ext
   coffee-rails (~> 3.1.0.rc)
   ffi-ncurses
-  j_query_engine!
+  j_query_engine (~> 0.0.2)!
   jquery-rails
   jruby-openssl
   json

@@ -11,7 +11,7 @@ gem 'activerecord-jdbcsqlite3-adapter'
 gem 'jruby-openssl'
 gem 'json'
 
-gem 'j_query_engine', :git => 'http://github.com/mafolz/j_query_engine.git'
+gem 'j_query_engine', "~> 0.0.2", :git => 'http://github.com/mafolz/j_query_engine.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

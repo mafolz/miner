@@ -19,6 +19,13 @@ set :scm, :git
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 
+namespace :deploy do
+  desc "copy all example configurations to shared dir"
+  task :init_config do
+    run "cp #{current_path}/config/application.yml.example #{shared_path}/config/application.yml"
+  end
+end
+
 # If you are using Passenger mod_rails uncomment this:
 # namespace :deploy do
 #   task :start do ; end

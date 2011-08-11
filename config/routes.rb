@@ -1,5 +1,12 @@
 Miner::Application.routes.draw do
-  resources :servers
+
+  resources :servers do
+    member do
+      post :render_world, :to => 'servers#render_world'
+    end
+  end
+
+  root :to => 'servers#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

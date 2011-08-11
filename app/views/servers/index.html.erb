@@ -9,9 +9,11 @@
       :title => server.title
     }) do %>
 
-      <td><%= link_to 'Show', server %></td>
-      <td><%= link_to 'Edit', edit_server_path(server) %></td>
-      <td><%= link_to 'Destroy', server, :confirm => 'Are you sure?', :method => :delete %></td>
+      <%= render :partial => 'servers/partials/server', :locals => {:server => server} %>
+
+      <%= link_button 'Show', server %>
+      <%= link_button 'Edit', edit_server_path(server) %>
+      <%= link_button 'Destroy', server, :confirm => 'Are you sure?', :method => :delete %>
     <% end %>
   <% end %>
 <% end %>
