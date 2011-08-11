@@ -1,0 +1,14 @@
+
+set :user,      "minecraft"
+set :password,  "secret"
+set :deploy_to, "/var/www/miner"
+
+role :web, "example.com"                          # Your HTTP server, Apache/etc
+role :app, "example.com"                          # This may be the same as your `Web` server
+role :db,  "example.com", :primary => true # This is where Rails migrations will run
+role :db,  "example.com"
+
+default_environment['PATH']      = "$PATH:/opt/jre1.6.0_25/bin:/opt/jruby/jruby-1.6.3/bin:/home/minecraft/.gem/jruby/1.8/bin"
+default_environment['JAVA_HOME'] ="/opt/jre1.6.0_25"
+
+

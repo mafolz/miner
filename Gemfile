@@ -6,12 +6,12 @@ gem 'arel', '2.1.4'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'activerecord-jdbc-adapter', :git => 'https://github.com/nicksieger/activerecord-jdbc-adapter.git'
+gem 'activerecord-jdbc-adapter', :git => 'http://github.com/nicksieger/activerecord-jdbc-adapter.git'
 gem 'activerecord-jdbcsqlite3-adapter'
 gem 'jruby-openssl'
 gem 'json'
 
-gem 'j_query_engine', :git => 'git@github.com:mafolz/j_query_engine.git'
+gem 'j_query_engine', :git => 'http://github.com/mafolz/j_query_engine.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -32,8 +32,9 @@ end
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
-
+gem 'capistrano'
+gem 'capistrano-ext'
+gem 'ffi-ncurses'
 # To use debugger
 # gem 'ruby-debug'
 
