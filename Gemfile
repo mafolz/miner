@@ -16,6 +16,7 @@ gem 'j_query_engine', "~> 0.0.2", :git => 'http://github.com/mafolz/j_query_engi
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'therubyrhino'
   gem 'sass-rails', "~> 3.1.0.rc"
   gem 'coffee-rails', "~> 3.1.0.rc"
   gem 'uglifier'
